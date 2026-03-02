@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio STEM - Tong Sampah Efisien</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; scroll-behavior:smooth; }
+        body { background:#f6f9f7; color:#333; line-height:1.7; }
+        .container { width:90%; max-width:1100px; margin:auto; }
+        
+        /* NAVBAR */
+        nav { position:fixed; top:0; width:100%; background:rgba(34,139,34,0.95); padding:15px 0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+        nav .container { display:flex; justify-content:center; gap:25px; flex-wrap:wrap; }
+        nav a { color:white; text-decoration:none; font-weight:500; font-size:14px; }
+
+        /* HERO - KEMBALI KE BACKGROUND PEMANDANGAN */
+        .hero { 
+            height:100vh; 
+            display:flex; 
+            align-items:center; 
+            justify-content:center; 
+            text-align:center; 
+            color:white; 
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1528323273322-d81458248d40"); 
+            background-size:cover; 
+            background-position:center; 
+        }
+        .hero h1 { font-size:clamp(32px, 5vw, 52px); font-weight:700; text-transform: uppercase; }
+        .hero p { margin-top:10px; font-size:20px; color: #e8f5e9; }
+        .hero img { width:250px; margin-top:20px; border-radius:15px; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+        /* SECTION STYLING */
+        section { padding:80px 0; }
+        h2 { text-align:center; margin-bottom:40px; color:#2e7d32; font-size:32px; font-weight: 700; }
+        .card { background:white; padding:30px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.05); }
+
+        /* ABOUT ME */
+        .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; align-items: center; }
+        @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+
+        /* STEM STEPS */
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px, 1fr)); gap:20px; }
+        .step-card img { width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:15px; }
+        .badge { background:#2e7d32; color:white; padding:4px 12px; border-radius:20px; font-size:11px; margin-bottom:10px; display:inline-block; }
+
+        /* TABLE */
+        table { width:100%; border-collapse:collapse; background:white; border-radius:12px; overflow:hidden; }
+        th { background:#2e7d32; color:white; padding:15px; text-align:left; }
+        td { padding:15px; border-bottom:1px solid #eee; }
+
+        /* KESIMPULAN */
+        .kesimpulan-box { background: #2e7d32; color: white; padding: 40px; border-radius: 20px; text-align: center; }
+
+        footer { background:#1b5e20; color:white; text-align:center; padding:30px; }
+        .fade { opacity:0; transform:translateY(30px); transition:0.8s; }
+        .fade.show { opacity:1; transform:translateY(0); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#tujuan">Tujuan</a>
+        <a href="#stem">5 Steps STEM</a>
+        <a href="#gotong">6 Nilai Gotong Royong</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="fade show">
+            <h1>TONG SAMPAH EFISIEN</h1>
+            <p>Proyek Kokurikuler STEM — SMAK Yos Sudarso Batam</p>
+            <img src="FOTO2.jpeg" alt="Tong Sampah Efisien">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="fade">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="card about-grid">
+            <img src="FOTO.jpeg" style="width:100%; border-radius:15px;" alt="Delvin and Team">
+            <div>
+                <h3>Delvin Sanjaya Wang</h3>
+                <p>Siswa XI.E SMA Katolik Yos Sudarso Batam. Dalam proyek kokurikuler ini, saya dan tim merancang <b>Tong Sampah Efisien</b>. Fokus kami adalah menciptakan wadah sampah yang fungsional dengan memanfaatkan material yang ada di sekitar kita.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tujuan" class="fade" style="background:#f0f4f1;">
+    <div class="container">
+        <h2>Tujuan Proyek</h2>
+        <div class="card">
+            <p>Berdasarkan pengamatan kami di SMAK Yos Sudarso Batam, tujuan proyek ini adalah:</p>
+            <ul style="list-style-position: inside; margin-top: 15px; font-size: 18px;">
+                <li>Menyediakan tempat sampah yang lebih kuat di area outdoor.</li>
+                <li>Menerapkan metode <i>Upcycling</i> pada ember bekas menjadi barang bernilai.</li>
+                <li>Membuktikan bahwa prinsip STEM dapat diterapkan dalam kehidupan sekolah.</li>
+                <li>Mempererat kerjasama tim melalui pengerjaan proyek fisik.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="stem" class="fade">
+    <div class="container">
+        <h2>5 Steps to Do Project STEM</h2>
+        <div class="grid">
+            <div class="card step-card">
+                <span class="badge">STEP 1</span>
+                <img src="FOTO6.jpeg" alt="Refleksi">
+                <h3>Refleksi</h3>
+                <p>Kami mulai dengan merenungkan masalah sampah dan membuat sketsa awal pada kardus.</p>
+            </div>
+            <div class="card step-card">
+                <span class="badge">STEP 2</span>
+                <img src="11002204-2.jpg" alt="Riset Lapangan">
+                <h3>Riset</h3>
+                <p>Melakukan pengamatan di lapangan sekitar SMAK Yos Sudarso untuk menentukan lokasi penempatan yang paling efektif.</p>
+            </div>
+            <div class="card step-card">
+                <span class="badge">STEP 3</span>
+                <img src="FOTO7.jpeg" alt="Penemuan">
+                <h3>Penemuan</h3>
+                <p>Menentukan teknik pemotongan kardus yang tepat agar penutup tong dapat terbuka dengan lancar.</p>
+            </div>
+            <div class="card step-card">
+                <span class="badge">STEP 4</span>
+                <img src="FOTO8.jpeg" alt="Aplikasi">
+                <h3>Aplikasi</h3>
+                <p>Tahap perakitan inti: Menyatukan ember, kardus, dan penguat mekanis secara bersama-sama.</p>
+            </div>
+            <div class="card step-card">
+                <span class="badge">STEP 5</span>
+                <img src="FOTO5.jpeg" alt="Komunikasi">
+                <h3>Komunikasi</h3>
+                <p>Tahap akhir untuk memastikan fungsi injakan berkerja dan menjaga estetika tong sebelum dipublikasikan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gotong" class="fade" style="background:#f0f4f1;">
+    <div class="container">
+        <h2>6 Nilai Gotong Royong</h2>
+        <div class="card" style="overflow-x:auto;">
+            <table>
+                <tr><th>Nilai</th><th>Penerapan dalam Proyek</th></tr>
+                <tr><td>Sukarela</td><td>Anggota tim dengan senang hati mengerjakan tugas meski di luar jam pelajaran.</td></tr>
+                <tr><td>Persatuan</td><td>Meskipun memiliki pendapat berbeda saat desain, kami tetap bersatu untuk satu hasil.</td></tr>
+                <tr><td>Kesatuan</td><td>Menyadari bahwa satu bagian saja yang gagal (seperti pedal), maka seluruh tong tidak efisien.</td></tr>
+                <tr><td>Sosialisasi</td><td>Berkomunikasi terus-menerus mengenai ketersediaan alat seperti lem tembak dan gunting.</td></tr>
+                <tr><td>Kekeluargaan</td><td>Bekerja dengan suasana akrab dan saling mendukung satu sama lain.</td></tr>
+                <tr><td>Tolong-menolong</td><td>Saling memegang material saat teman yang lain sedang memotong agar tetap presisi.</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section id="kesimpulan" class="fade">
+    <div class="container">
+        <h2>Kesimpulan</h2>
+        <div class="kesimpulan-box">
+            <p>Proyek <b>Tong Sampah Efisien</b> ini membuktikan bahwa kreativitas dan kerjasama adalah kunci dalam memecahkan masalah lingkungan. Dengan mengikuti alur STEM, kami berhasil mengubah limbah menjadi solusi fungsional bagi SMAK Yos Sudarso Batam.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Delvin Sanjaya Wang - Portofolio STEM SMAK Yos Sudarso Batam</p>
+</footer>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) entry.target.classList.add("show");
+        });
+    });
+    document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
